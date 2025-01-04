@@ -4,7 +4,7 @@ from PyPDF2 import PdfReader
 import google.generativeai as genai
 
 
-genai.configure(api_key='AIzaSyDa_MOq04fLAGFHQcxud5mAXQ_0BdKS3uA')
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 
 def process_text_with_gemini(text):
